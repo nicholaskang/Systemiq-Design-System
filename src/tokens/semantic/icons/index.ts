@@ -6,7 +6,6 @@ export const semanticIcons = {
     text: iconSizes.sm, // Icons within body text
     heading: iconSizes.lg, // Icons within headings
   },
-
   // For different UI components
   ui: {
     button: iconSizes.sm, // Icons in buttons
@@ -16,7 +15,6 @@ export const semanticIcons = {
     badge: iconSizes.xs, // Small indicator icons
     illustration: iconSizes.xl, // Feature illustrations
   },
-
   // For different button sizes
   button: {
     sm: iconSizes.sm,
