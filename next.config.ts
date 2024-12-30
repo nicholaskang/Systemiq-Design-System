@@ -1,7 +1,19 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  reactStrictMode: true,
+  webpack: (config: import("webpack").Configuration) => {
+    config.resolve = config.resolve || {};
+    config.resolve.extensions = [
+      ".ts",
+      ".tsx",
+      ".js",
+      ".jsx",
+      ".mts",
+      ".mjs",
+      ".cts",
+      ".cjs",
+    ];
+    return config;
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

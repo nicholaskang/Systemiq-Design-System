@@ -1,6 +1,5 @@
 import React from "react";
-
-import "./button.scss";
+import * as S from "./Button.styles";
 
 export interface ButtonProps {
   /** Semantic Variant - Usage and style */
@@ -27,15 +26,13 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   return (
-    <button
+    <S.Button
       type="button"
-      className={[
-        "storybook-button",
-        `storybook-button--${size}`,
-        `storybook-button--${variant}`,
-      ].join(" ")}
+      variant={variant}
+      size={size}
+      label={label}
       {...props}>
-      {label}
-    </button>
+      <span>{label}</span>
+    </S.Button>
   );
 };
