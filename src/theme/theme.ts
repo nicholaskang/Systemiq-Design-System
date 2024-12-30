@@ -34,12 +34,9 @@ declare module "@emotion/react" {
 export type ThemeMode = "light" | "dark";
 
 export const lightTheme = {
-  // Design tokens
   ...typography,
   space: spacing,
   radii: radius,
-
-  // Theme-specific tokens
   colors: {
     background: {
       primary: colors.white,
@@ -94,12 +91,9 @@ export const lightTheme = {
 } as const;
 
 export const darkTheme = {
-  // Design tokens - same as light theme
   ...typography,
   space: spacing,
   radii: radius,
-
-  // Theme-specific tokens
   colors: {
     background: {
       primary: colors.gray[900],

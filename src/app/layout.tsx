@@ -1,6 +1,6 @@
 // src/app/layout.tsx
 import { ThemeProvider } from "@emotion/react";
-import { lightTheme } from "@/styles/theme/theme";
+import { lightTheme } from "@/theme/theme";
 
 export default function RootLayout({
   children,
