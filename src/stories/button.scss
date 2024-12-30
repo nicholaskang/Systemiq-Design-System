@@ -4,13 +4,33 @@
   font-weight: 700;
   line-height: 1;
   border: 0;
-  border-radius: 3em;
+  border-radius: 0.375em;
   cursor: pointer;
 
   // Variants
   &--default {
-    background-color: pink;
+    background-color: #e0e0e0;
     color: black;
+  }
+  &--primary {
+    background-color: #0052cc;
+    color: white;
+  }
+  &--subtle {
+    background-color: transparent;
+    color: black;
+  }
+  &--warning {
+    background-color: #ffab00;
+    color: black;
+  }
+  &--danger {
+    background-color: #d32f2f;
+    color: white;
+  }
+  &--discovery {
+    background-color: #6554c0;
+    color: white;
   }
 
   // Sizes
@@ -25,19 +45,5 @@
   &--large {
     font-size: 16px;
     padding: 12px 24px;
-  }
-}
-
-// Sunset styles
-.storybook-button {
-  // Sunset "primary" button
-  &--primary {
-    background-color: #1ea7fd;
-    color: white;
-  }
-  &--secondary {
-    background-color: transparent;
-    color: #333;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
   }
 }

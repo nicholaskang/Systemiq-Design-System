@@ -3,7 +3,7 @@ import React from "react";
 import "./button.scss";
 
 export interface ButtonProps {
-  /** Button Variant - Semantic Usage */
+  /** Semantic Variant - Usage and style */
   variant?:
     | "default"
     | "primary"
@@ -11,46 +11,31 @@ export interface ButtonProps {
     | "warning"
     | "danger"
     | "discovery";
-  /** Is this the principal call to action on the page? */
-  primary?: boolean;
-  /** What background color to use */
-  backgroundColor?: string;
-  /** How large should the button be? */
+  /** Size */
   size?: "small" | "medium" | "large";
-  /** Button contents */
+  /** Button text */
   label: string;
   /** Optional click handler */
   onClick?: () => void;
 }
 
-/** Primary UI component for user interaction */
+/** A button triggers an event or action */
 export const Button = ({
   variant = "default",
-  primary = false,
   size = "medium",
-  backgroundColor,
   label,
   ...props
 }: ButtonProps) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
   return (
     <button
       type="button"
       className={[
         "storybook-button",
         `storybook-button--${size}`,
-        mode,
         `storybook-button--${variant}`,
       ].join(" ")}
       {...props}>
       {label}
-      <style jsx>{`
-        button {
-          background-color: ${backgroundColor};
-        }
-      `}</style>
     </button>
   );
 };
