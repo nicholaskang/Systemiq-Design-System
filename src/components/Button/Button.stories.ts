@@ -4,9 +4,6 @@ import { Button } from "./Button";
 const meta: Meta<typeof Button> = {
   title: "Components/Button",
   component: Button,
-  parameters: {
-    layout: "centered",
-  },
   tags: ["autodocs"],
   argTypes: {
     variant: {
@@ -42,6 +39,55 @@ export const Primary: Story = {
   args: {
     label: "Button",
     size: "medium",
+    variant: "primary",
+  },
+};
+export const Subtle: Story = {
+  args: {
+    label: "Button",
+    size: "medium",
+    variant: "subtle",
+  },
+};
+export const Warning: Story = {
+  args: {
+    label: "Button",
+    size: "medium",
+    variant: "warning",
+  },
+};
+export const Danger: Story = {
+  args: {
+    label: "Button",
+    size: "medium",
+    variant: "danger",
+  },
+};
+export const Discovery: Story = {
+  args: {
+    label: "Button",
+    size: "medium",
+    variant: "discovery",
+  },
+};
+export const Small: Story = {
+  args: {
+    label: "Button",
+    size: "small",
+    variant: "primary",
+  },
+};
+export const Medium: Story = {
+  args: {
+    label: "Button",
+    size: "medium",
+    variant: "primary",
+  },
+};
+export const Large: Story = {
+  args: {
+    label: "Button",
+    size: "large",
     variant: "primary",
   },
 };
