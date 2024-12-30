@@ -27,7 +27,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         variant={variant}
         size={size}
         {...props}>
-        {children}
+        <span>{children}</span>
       </StyledButton>
     );
   }

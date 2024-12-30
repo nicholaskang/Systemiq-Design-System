@@ -1,4 +1,4 @@
-import { colors, spacing, typography, radius } from "@/tokens";
+import { colors, spacing, typography, radius } from "@/tokens/core";
 
 declare module "@emotion/react" {
   export interface Theme {
