@@ -1,8 +1,10 @@
 import React from "react";
-import * as S from "./Button.styles";
+import { Button as StyledButton } from "./Button.styles";
 
 export interface ButtonProps {
-  /** Semantic Variant - Usage and style */
+  /** Button content */
+  children: React.ReactNode;
+  /** Visual style variant */
   variant?:
     | "default"
     | "primary"
@@ -12,27 +14,23 @@ export interface ButtonProps {
     | "discovery";
   /** Size */
   size?: "small" | "medium" | "large";
-  /** Button text */
-  label: string;
   /** Optional click handler */
   onClick?: () => void;
 }
 
-/** A button triggers an event or action */
-export const Button = ({
-  variant = "default",
-  size = "medium",
-  label,
-  ...props
-}: ButtonProps) => {
-  return (
-    <S.Button
-      type="button"
-      variant={variant}
-      size={size}
-      label={label}
-      {...props}>
-      <span>{label}</span>
-    </S.Button>
-  );
-};
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ children, variant = "default", size = "medium", ...props }, ref) => {
+    return (
+      <StyledButton
+        ref={ref}
+        type="button"
+        variant={variant}
+        size={size}
+        {...props}>
+        {children}
+      </StyledButton>
+    );
+  }
+);
+
+Button.displayName = "Button";

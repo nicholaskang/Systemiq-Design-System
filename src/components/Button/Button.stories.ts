@@ -5,6 +5,11 @@ const meta: Meta<typeof Button> = {
   title: "Components/Button",
   component: Button,
   tags: ["autodocs"],
+  args: {
+    children: "Button",
+    variant: "default",
+    size: "medium",
+  },
   argTypes: {
     variant: {
       control: "select",
@@ -21,6 +26,11 @@ const meta: Meta<typeof Button> = {
       control: "select",
       options: ["small", "medium", "large"],
     },
+    children: {
+      control: "text",
+      defaultValue: "Button",
+      description: "Button text",
+    },
   },
 };
 
@@ -29,7 +39,7 @@ type Story = StoryObj<typeof Button>;
 
 export const Default: Story = {
   args: {
-    label: "Button",
+    children: "Default Button",
     size: "medium",
     variant: "default",
   },
@@ -37,56 +47,56 @@ export const Default: Story = {
 
 export const Primary: Story = {
   args: {
-    label: "Button",
+    children: "Primary Button",
     size: "medium",
     variant: "primary",
   },
 };
 export const Subtle: Story = {
   args: {
-    label: "Button",
+    children: "Subtle Button",
     size: "medium",
     variant: "subtle",
   },
 };
 export const Warning: Story = {
   args: {
-    label: "Button",
+    children: "Warning Button",
     size: "medium",
     variant: "warning",
   },
 };
 export const Danger: Story = {
   args: {
-    label: "Button",
+    children: "Danger Button",
     size: "medium",
     variant: "danger",
   },
 };
 export const Discovery: Story = {
   args: {
-    label: "Button",
+    children: "Discovery Button",
     size: "medium",
     variant: "discovery",
   },
 };
 export const Small: Story = {
   args: {
-    label: "Button",
+    children: "Small Button",
     size: "small",
     variant: "primary",
   },
 };
 export const Medium: Story = {
   args: {
-    label: "Button",
+    children: "Medium Button",
     size: "medium",
     variant: "primary",
   },
 };
 export const Large: Story = {
   args: {
-    label: "Button",
+    children: "Large Button",
     size: "large",
     variant: "primary",
   },

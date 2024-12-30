@@ -1,5 +1,4 @@
-export const baseColors = {
-  // Core palette
+export const colors = {
   gray: {
     50: "#f7f7f7",
     100: "#e0e0e0", // Main gray
@@ -72,4 +71,9 @@ export const baseColors = {
     800: "#056e0c",
     900: "#045e0a",
   },
+
+  // Static colors
+  white: "#ffffff",
+  black: "#1a1a1a",
+  transparent: "transparent",
 } as const;
