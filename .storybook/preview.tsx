@@ -1,7 +1,7 @@
 import React from "react";
 import type { Preview } from "@storybook/react";
 import { ThemeProvider } from "@emotion/react";
-import { lightTheme } from "../src/styles/theme/theme";
+import { lightTheme } from "../src/theme/theme";
 
 const preview: Preview = {
   decorators: [

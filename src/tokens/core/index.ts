@@ -1,6 +1,7 @@
 export { duration } from "./animations";
 export { breakpoints } from "./breakpoints";
 export { colors } from "./colors";
+export { iconSizes } from "./iconSizes";
 export { radius } from "./radius";
 export { shadows } from "./shadows";
 export { spacing } from "./spacing";
