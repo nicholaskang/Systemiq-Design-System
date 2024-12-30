@@ -29,7 +29,14 @@ export const typography = {
     loose: 2,
   },
   fontFamily: {
-    default: "'Lato', sans-serif",
+    body: "'Lato', sans-serif",
     heading: "'Museo Sans', serif",
+  },
+  letterSpacing: {
+    tight: "-0.02em", // For hero text
+    snug: "-0.015em", // For h1
+    subtle: "-0.01em", // For h2
+    normal: "0", // Default
+    wide: "0.01em", // For small text that needs slight expansion
   },
 } as const;

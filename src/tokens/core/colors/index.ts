@@ -1,7 +1,7 @@
 export const colors = {
   gray: {
     50: "#f7f7f7",
-    100: "#e0e0e0", // Main gray
+    100: "#e0e0e0",
     200: "#c2c2c2",
     300: "#a3a3a3",
     400: "#858585",
@@ -17,7 +17,7 @@ export const colors = {
     200: "#99c2ff",
     300: "#66a3ff",
     400: "#3385ff",
-    500: "#0052cc", // Main blue
+    500: "#0052cc",
     600: "#0047b3",
     700: "#003d99",
     800: "#003380",
@@ -29,7 +29,7 @@ export const colors = {
     200: "#ffdb85",
     300: "#ffc847",
     400: "#ffb41f",
-    500: "#ffab00", // Main yellow
+    500: "#ffab00",
     600: "#e69900",
     700: "#cc8800",
     800: "#b37700",
@@ -41,7 +41,7 @@ export const colors = {
     200: "#ef9a9a",
     300: "#e57373",
     400: "#ef5350",
-    500: "#d32f2f", // Main red
+    500: "#d32f2f",
     600: "#c62828",
     700: "#b71c1c",
     800: "#a31515",
@@ -53,7 +53,7 @@ export const colors = {
     200: "#c5b8ff",
     300: "#a193ff",
     400: "#8273e6",
-    500: "#6554c0", // Main purple
+    500: "#6554c0",
     600: "#5849a9",
     700: "#4a3f92",
     800: "#3d347b",
@@ -65,14 +65,12 @@ export const colors = {
     200: "#a5d6a7",
     300: "#81c784",
     400: "#66bb6a",
-    500: "#089c10", // Main green
+    500: "#089c10",
     600: "#078d0f",
     700: "#067d0d",
     800: "#056e0c",
     900: "#045e0a",
   },
-
-  // Static colors
   white: "#ffffff",
   black: "#1a1a1a",
   transparent: "transparent",
