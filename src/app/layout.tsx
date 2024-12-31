@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 import { ThemeProvider } from "@emotion/react";
 import { lightTheme } from "@/theme/theme";
 

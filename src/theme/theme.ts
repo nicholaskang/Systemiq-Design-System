@@ -1,15 +1,19 @@
-import { colors, spacing, typography, radius } from "@/tokens/core";
-import { semanticColors } from "@/tokens/semantic/colors";
+import { spacing, typography, radius } from "@/tokens/core";
+import {
+  lightColors,
+  darkColors,
+  type SemanticColorTypes,
+} from "@/tokens/semantic/colors";
 
 export type ThemeType = {
   typography: {
-    size: typeof typography.fontSizes; // Make sure this matches your core typography export
+    size: typeof typography.fontSizes;
     fontWeights: typeof typography.fontWeights;
     fontFamily: typeof typography.fontFamily;
   };
   spacing: typeof spacing;
   radius: typeof radius;
-  semanticColors: typeof semanticColors;
+  semanticColors: SemanticColorTypes;
 };
 
 declare module "@emotion/react" {
@@ -24,5 +28,16 @@ export const lightTheme: ThemeType = {
   },
   spacing,
   radius,
-  semanticColors,
+  semanticColors: lightColors,
+} as const;
+
+export const darkTheme: ThemeType = {
+  typography: {
+    size: typography.fontSizes,
+    fontWeights: typography.fontWeights,
+    fontFamily: typography.fontFamily,
+  },
+  spacing,
+  radius,
+  semanticColors: darkColors,
 } as const;

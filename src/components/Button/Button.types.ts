@@ -1,7 +1,12 @@
-import { semanticColors } from "@/tokens/semantic/colors";
-
 export type ButtonSize = "small" | "medium" | "large";
-export type ButtonVariant = keyof typeof semanticColors.status;
+export type ButtonVariant =
+  | "default"
+  | "primary"
+  | "warning"
+  | "danger"
+  | "success"
+  | "info"
+  | "discovery";
 
 export interface ButtonProps {
   size?: ButtonSize;

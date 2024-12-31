@@ -2,17 +2,19 @@ import styled from "@emotion/styled";
 import { ButtonProps } from "./Button.types";
 
 export const Button = styled.button<ButtonProps>`
-  font-family: ${({ theme }) => theme.typography.fontFamily.body};
-  font-weight: ${({ theme }) => theme.typography.fontWeights.medium};
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  // Base styles
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
   gap: ${({ theme }) => theme.spacing[2]};
+  border-radius: ${({ theme }) => theme.radius.md};
+  font-family: ${({ theme }) => theme.typography.fontFamily.body};
+  font-weight: ${({ theme }) => theme.typography.fontWeights.medium};
 
-  // Size styles
+  // Size variants
   ${({ theme, size = "medium" }) => {
     switch (size) {
       case "small":
@@ -36,9 +38,7 @@ export const Button = styled.button<ButtonProps>`
     }
   }}
 
-  border-radius: ${({ theme }) => theme.radius.md};
-
-  // Variant styles
+  // Status/Variant styles
   ${({ theme, variant = "default" }) => {
     const status = theme.semanticColors.status[variant];
     return `
@@ -70,13 +70,16 @@ export const Button = styled.button<ButtonProps>`
     border-color: transparent;
     cursor: not-allowed;
     color: ${({ theme }) => theme.semanticColors.text.tertiary};
+    opacity: 0.6;
   }
 
+  // Loading state
   &[data-loading="true"] {
     cursor: wait;
     position: relative;
+
     > * {
       opacity: 0;
     }
   }
-}`;
+`;
