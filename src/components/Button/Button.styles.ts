@@ -67,7 +67,7 @@ export const Button = styled.button<ButtonProps>`
   &:disabled {
     background-color: ${({ theme, variant = "default" }) =>
       theme.semanticColors.status[variant].disabled};
-    border-color: transparent;
+    border-color: theme.semanticColors.status[variant].disabled;
     cursor: not-allowed;
     color: ${({ theme }) => theme.semanticColors.text.tertiary};
     opacity: 0.6;

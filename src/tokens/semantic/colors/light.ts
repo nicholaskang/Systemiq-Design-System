@@ -34,9 +34,9 @@ export const lightColors = {
     },
     // Main interactive elements like primary buttons
     primary: {
-      background: colors.blue[600],
-      hover: colors.blue[700],
-      active: colors.blue[800],
+      background: colors.blue[500],
+      hover: colors.blue[800],
+      active: colors.blue[900],
       disabled: colors.gray[200],
       text: colors.blue[800],
       buttonText: colors.white,
@@ -45,9 +45,9 @@ export const lightColors = {
     },
     // High-visibility destructive actions or errors
     danger: {
-      background: colors.red[600],
-      hover: colors.red[700],
-      active: colors.red[800],
+      background: colors.red[500],
+      hover: colors.red[800],
+      active: colors.red[900],
       disabled: colors.red[100],
       text: colors.red[800],
       buttonText: colors.white,
@@ -56,9 +56,9 @@ export const lightColors = {
     },
     // Cautionary alerts or important notices
     warning: {
-      background: colors.yellow[600],
-      hover: colors.yellow[700],
-      active: colors.yellow[800],
+      background: colors.yellow[500],
+      hover: colors.yellow[800],
+      active: colors.yellow[900],
       disabled: colors.yellow[100],
       text: colors.yellow[900],
       buttonText: colors.black,
@@ -67,9 +67,9 @@ export const lightColors = {
     },
     // Positive confirmation or success messages
     success: {
-      background: colors.green[600],
-      hover: colors.green[700],
-      active: colors.green[800],
+      background: colors.green[500],
+      hover: colors.green[800],
+      active: colors.green[900],
       disabled: colors.green[100],
       text: colors.green[800],
       buttonText: colors.white,
@@ -78,9 +78,9 @@ export const lightColors = {
     },
     // General information or updates
     info: {
-      background: colors.blue[600],
-      hover: colors.blue[700],
-      active: colors.blue[800],
+      background: colors.blue[500],
+      hover: colors.blue[800],
+      active: colors.blue[900],
       disabled: colors.blue[100],
       text: colors.blue[800],
       buttonText: colors.white,
@@ -89,9 +89,9 @@ export const lightColors = {
     },
     // New features or learning opportunities
     discovery: {
-      background: colors.purple[600],
-      hover: colors.purple[700],
-      active: colors.purple[800],
+      background: colors.purple[500],
+      hover: colors.purple[800],
+      active: colors.purple[900],
       disabled: colors.purple[100],
       text: colors.purple[800],
       buttonText: colors.white,
