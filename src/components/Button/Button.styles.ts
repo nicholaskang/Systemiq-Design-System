@@ -11,27 +11,27 @@ export const Button = styled.button<ButtonProps>`
   transition: all 0.2s ease-in-out;
   gap: ${({ theme }) => theme.spacing[2]};
   border-radius: ${({ theme }) => theme.radius.md};
-  font-family: ${({ theme }) => theme.typography.fontFamily.body};
-  font-weight: ${({ theme }) => theme.typography.fontWeights.medium};
+  font-family: ${({ theme }) => theme.typography.inline.button.fontFamily};
+  font-weight: ${({ theme }) => theme.typography.inline.button.fontWeight};
 
   // Size variants
   ${({ theme, size = "medium" }) => {
     switch (size) {
       case "small":
         return `
-          font-size: ${theme.typography.size.sm};
+          font-size: ${theme.typography.inline.button.fontSize};
           padding: ${theme.spacing[1]} ${theme.spacing[2]};
           height: ${theme.spacing[6]};
         `;
       case "large":
         return `
-          font-size: ${theme.typography.size.lg};
+          font-size: ${theme.typography.inline.button.fontSize};
           padding: ${theme.spacing[3]} ${theme.spacing[4]};
           height: ${theme.spacing[10]};
         `;
       default:
         return `
-          font-size: ${theme.typography.size.base};
+          font-size: ${theme.typography.inline.button.fontSize};
           padding: ${theme.spacing[2]} ${theme.spacing[3]};
           height: ${theme.spacing[8]};
         `;
