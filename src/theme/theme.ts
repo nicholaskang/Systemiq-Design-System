@@ -1,3 +1,5 @@
+"use client";
+import { Theme as EmotionTheme } from "@emotion/react";
 import { spacing, radius } from "@/tokens/core";
 import { semanticTypography } from "@/tokens";
 import {
@@ -14,7 +16,7 @@ export type ThemeType = {
 };
 
 declare module "@emotion/react" {
-  export interface Theme extends ThemeType {}
+  interface Theme extends EmotionTheme, ThemeType {}
 }
 
 export const lightTheme: ThemeType = {
