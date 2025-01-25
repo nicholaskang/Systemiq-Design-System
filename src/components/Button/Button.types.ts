@@ -10,4 +10,5 @@ export interface ButtonProps {
   size?: ButtonSize;
   variant?: ButtonVariant;
   disabled?: boolean;
+  isLoading?: boolean;
 }

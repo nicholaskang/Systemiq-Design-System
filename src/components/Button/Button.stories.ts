@@ -73,6 +73,14 @@ export const Disabled: Story = {
     disabled: true,
   },
 };
+export const Loading: Story = {
+  args: {
+    children: "Loading Button",
+    size: "medium",
+    variant: "primary",
+    isLoading: true,
+  },
+};
 export const Small: Story = {
   args: {
     children: "Small Button",
