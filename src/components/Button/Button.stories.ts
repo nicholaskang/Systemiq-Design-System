@@ -7,13 +7,13 @@ const meta: Meta<typeof Button> = {
   tags: ["autodocs"],
   args: {
     children: "Button",
-    variant: "default",
+    variant: "primary",
     size: "medium",
   },
   argTypes: {
     variant: {
       control: "select",
-      options: ["default", "primary", "warning", "danger", "discovery"],
+      options: ["primary", "warning", "danger", "discovery", "neutral"],
     },
     size: {
       control: "select",
@@ -29,14 +29,6 @@ const meta: Meta<typeof Button> = {
 
 export default meta;
 type Story = StoryObj<typeof Button>;
-
-export const Default: Story = {
-  args: {
-    children: "Button",
-    size: "medium",
-    variant: "default",
-  },
-};
 
 export const Primary: Story = {
   args: {
@@ -66,11 +58,18 @@ export const Discovery: Story = {
     variant: "discovery",
   },
 };
+export const Neutral: Story = {
+  args: {
+    children: "Neutral Button",
+    size: "medium",
+    variant: "neutral",
+  },
+};
 export const Disabled: Story = {
   args: {
     children: "Disabled Button",
     size: "medium",
-    variant: "default",
+    variant: "neutral",
     disabled: true,
   },
 };

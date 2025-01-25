@@ -21,17 +21,6 @@ export const lightColors = {
   },
   // Interactive and informational state colors for components and feedback
   status: {
-    // For subtle, less prominent interactive elements
-    default: {
-      background: colors.gray[100],
-      hover: colors.gray[200],
-      active: colors.gray[300],
-      disabled: colors.gray[50],
-      text: colors.gray[900],
-      buttonText: colors.gray[900],
-      border: colors.gray[300],
-      icon: colors.gray[500],
-    },
     // Main interactive elements like primary buttons
     primary: {
       background: colors.blue[500],
@@ -97,6 +86,17 @@ export const lightColors = {
       buttonText: colors.white,
       border: colors.purple[700],
       icon: colors.purple[600],
+    },
+    // For subtle, less prominent interactive elements
+    neutral: {
+      background: colors.gray[100],
+      hover: colors.gray[200],
+      active: colors.gray[300],
+      disabled: colors.gray[50],
+      text: colors.gray[900],
+      buttonText: colors.gray[900],
+      border: colors.gray[300],
+      icon: colors.gray[500],
     },
   },
   disabled: {

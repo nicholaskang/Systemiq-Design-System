@@ -1,12 +1,10 @@
 export type ButtonSize = "small" | "medium" | "large";
 export type ButtonVariant =
-  | "default"
   | "primary"
   | "warning"
   | "danger"
-  | "success"
-  // | "info"
-  | "discovery";
+  | "discovery"
+  | "neutral";
 
 export interface ButtonProps {
   size?: ButtonSize;

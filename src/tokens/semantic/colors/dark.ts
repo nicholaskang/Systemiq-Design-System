@@ -20,17 +20,6 @@ export const darkColors = {
     inverse: colors.gray[200],
   },
   status: {
-    // For subtle, less prominent interactive elements
-    default: {
-      background: colors.gray[700],
-      hover: colors.gray[600],
-      active: colors.gray[500],
-      disabled: colors.gray[800],
-      text: colors.white,
-      buttonText: colors.white,
-      border: colors.gray[600],
-      icon: colors.gray[400],
-    },
     // Main interactive elements like primary buttons
     primary: {
       background: colors.blue[600],
@@ -96,6 +85,17 @@ export const darkColors = {
       buttonText: colors.white,
       border: colors.purple[500],
       icon: colors.purple[400],
+    },
+    // For subtle, less prominent interactive elements
+    default: {
+      background: colors.gray[700],
+      hover: colors.gray[600],
+      active: colors.gray[500],
+      disabled: colors.gray[800],
+      text: colors.white,
+      buttonText: colors.white,
+      border: colors.gray[600],
+      icon: colors.gray[400],
     },
   },
   focus: {

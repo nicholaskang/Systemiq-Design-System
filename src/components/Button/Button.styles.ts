@@ -39,7 +39,7 @@ export const Button = styled.button<ButtonProps>`
   }}
 
   // Status/Variant styles
-  ${({ theme, variant = "default" }) => {
+  ${({ theme, variant = "primary" }) => {
     const status = theme.semanticColors.status[variant];
     return `
       background-color: ${status.background};

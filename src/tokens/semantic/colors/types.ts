@@ -17,16 +17,6 @@ export type SemanticColorTypes = {
     inverse: string;
   };
   status: {
-    default: {
-      background: string;
-      hover: string;
-      active: string;
-      disabled: string;
-      text: string;
-      buttonText: string;
-      border: string;
-      icon: string;
-    };
     primary: {
       background: string;
       hover: string;
@@ -67,7 +57,7 @@ export type SemanticColorTypes = {
       border: string;
       icon: string;
     };
-    success: {
+    neutral: {
       background: string;
       hover: string;
       active: string;
@@ -77,16 +67,6 @@ export type SemanticColorTypes = {
       border: string;
       icon: string;
     };
-    // info: {
-    //   background: string;
-    //   hover: string;
-    //   active: string;
-    //   disabled: string;
-    //   text: string;
-    //   buttonText: string;
-    //   border: string;
-    //   icon: string;
-    // };
   };
   disabled: {
     background: string;
