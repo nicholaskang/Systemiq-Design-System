@@ -65,9 +65,10 @@ export const Button = styled.button<ButtonProps>`
 
   // Disabled state
   &:disabled {
-    background-color: ${({ theme }) =>
-      theme.semanticColors.disabled.background};
-    border-color: ${({ theme }) => theme.semanticColors.disabled.border};
+    background-color: ${({ theme, variant = "primary" }) =>
+      theme.semanticColors.status[variant].background};
+    border-color: ${({ theme, variant = "primary" }) =>
+      theme.semanticColors.status[variant].border};
     cursor: not-allowed;
     color: ${({ theme }) => theme.semanticColors.disabled.text};
     opacity: 0.6;

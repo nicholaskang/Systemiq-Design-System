@@ -24,6 +24,16 @@ const meta: Meta<typeof Button> = {
       defaultValue: "Button",
       description: "Button text",
     },
+    disabled: {
+      control: "boolean",
+      defaultValue: false,
+      description: "Disabled state",
+    },
+    isLoading: {
+      control: "boolean",
+      defaultValue: false,
+      description: "Loading state",
+    },
   },
 };
 

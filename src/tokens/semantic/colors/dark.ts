@@ -87,7 +87,7 @@ export const darkColors = {
       icon: colors.purple[400],
     },
     // For subtle, less prominent interactive elements
-    default: {
+    neutral: {
       background: colors.gray[700],
       hover: colors.gray[600],
       active: colors.gray[500],
@@ -97,6 +97,14 @@ export const darkColors = {
       border: colors.gray[600],
       icon: colors.gray[400],
     },
+  },
+  disabled: {
+    background: colors.gray[800],
+    hover: colors.gray[800],
+    active: colors.gray[800],
+    text: colors.gray[600],
+    border: colors.gray[700],
+    icon: colors.gray[500],
   },
   focus: {
     shadow: colors.blue[700],

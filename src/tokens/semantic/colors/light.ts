@@ -100,7 +100,8 @@ export const lightColors = {
     },
   },
   disabled: {
-    background: colors.gray[100],
+    // background: colors.gray[100],
+    background: "initial",
     hover: colors.gray[100],
     active: colors.gray[100],
     text: colors.gray[400],
