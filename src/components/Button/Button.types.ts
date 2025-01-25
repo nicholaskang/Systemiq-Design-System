@@ -5,7 +5,7 @@ export type ButtonVariant =
   | "warning"
   | "danger"
   | "success"
-  | "info"
+  // | "info"
   | "discovery";
 
 export interface ButtonProps {

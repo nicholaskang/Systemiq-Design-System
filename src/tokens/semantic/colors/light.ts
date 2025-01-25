@@ -99,6 +99,14 @@ export const lightColors = {
       icon: colors.purple[600],
     },
   },
+  disabled: {
+    background: colors.gray[100],
+    hover: colors.gray[100],
+    active: colors.gray[100],
+    text: colors.gray[400],
+    border: colors.gray[200],
+    icon: colors.gray[300],
+  },
   focus: {
     shadow: colors.blue[200],
     border: colors.blue[500],

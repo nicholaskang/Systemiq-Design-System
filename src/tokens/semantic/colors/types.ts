@@ -77,16 +77,24 @@ export type SemanticColorTypes = {
       border: string;
       icon: string;
     };
-    info: {
-      background: string;
-      hover: string;
-      active: string;
-      disabled: string;
-      text: string;
-      buttonText: string;
-      border: string;
-      icon: string;
-    };
+    // info: {
+    //   background: string;
+    //   hover: string;
+    //   active: string;
+    //   disabled: string;
+    //   text: string;
+    //   buttonText: string;
+    //   border: string;
+    //   icon: string;
+    // };
+  };
+  disabled: {
+    background: string;
+    hover: string;
+    active: string;
+    text: string;
+    border: string;
+    icon: string;
   };
   focus: {
     shadow: string;

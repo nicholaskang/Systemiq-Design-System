@@ -5,10 +5,11 @@ import * as S from "./Button.styles";
 export const Button = React.forwardRef<
   HTMLButtonElement,
   ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>
->(({ children, ...props }, ref) => {
+>(({ children, disabled, ...props }, ref) => {
   return (
     <S.Button
       {...props}
+      disabled={disabled}
       ref={ref}>
       {children}
     </S.Button>

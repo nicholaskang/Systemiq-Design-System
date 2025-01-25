@@ -66,6 +66,14 @@ export const Discovery: Story = {
     variant: "discovery",
   },
 };
+export const Disabled: Story = {
+  args: {
+    children: "Disabled Button",
+    size: "medium",
+    variant: "default",
+    disabled: true,
+  },
+};
 export const Small: Story = {
   args: {
     children: "Small Button",
