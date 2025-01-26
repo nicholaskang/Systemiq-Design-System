@@ -76,12 +76,10 @@ export const Button = styled.button<ButtonProps>`
   }
 
   // Loading state
-  &[data-loading="true"] {
-    cursor: wait;
-    position: relative;
-
-    > * {
-      opacity: 0;
-    }
-  }
+  ${({ isLoading }) =>
+    isLoading &&
+    `
+    opacity: 0.8;
+    pointer-events: none;
+  `}
 `;

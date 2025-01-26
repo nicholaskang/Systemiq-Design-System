@@ -13,7 +13,8 @@ export const Button = React.forwardRef<
     <S.Button
       {...props}
       variant={variant}
-      disabled={disabled || isLoading}
+      disabled={disabled}
+      isLoading={isLoading}
       ref={ref}>
       {isLoading && (
         <ClipLoader
