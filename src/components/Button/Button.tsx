@@ -6,13 +6,13 @@ import { useTheme } from "@emotion/react";
 export const Button = React.forwardRef<
   HTMLButtonElement,
   ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>
->(({ children, disabled, isLoading, variant = "primary", ...props }, ref) => {
+>(({ children, disabled, isLoading, intent = "primary", ...props }, ref) => {
   const theme = useTheme();
-  const spinnerColor = theme.semanticColors.status[variant].buttonText;
+  const spinnerColor = theme.semanticColors.status[intent].buttonText;
   return (
     <S.Button
       {...props}
-      variant={variant}
+      intent={intent}
       disabled={disabled}
       isLoading={isLoading}
       aria-busy={isLoading ? "true" : "false"}

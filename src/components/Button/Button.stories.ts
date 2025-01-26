@@ -7,13 +7,13 @@ const meta: Meta<typeof Button> = {
   tags: ["autodocs"],
   args: {
     children: "Button",
-    variant: "primary",
+    intent: "primary",
     size: "medium",
   },
   argTypes: {
-    variant: {
+    intent: {
       control: "select",
-      options: ["primary", "warning", "danger", "discovery", "neutral"],
+      options: ["primary", "warning", "danger", "info", "neutral"],
     },
     size: {
       control: "select",
@@ -44,42 +44,42 @@ export const Primary: Story = {
   args: {
     children: "Primary Button",
     size: "medium",
-    variant: "primary",
+    intent: "primary",
   },
 };
 export const Warning: Story = {
   args: {
     children: "Warning Button",
     size: "medium",
-    variant: "warning",
+    intent: "warning",
   },
 };
 export const Danger: Story = {
   args: {
     children: "Danger Button",
     size: "medium",
-    variant: "danger",
+    intent: "danger",
   },
 };
-export const Discovery: Story = {
+export const Info: Story = {
   args: {
-    children: "Discovery Button",
+    children: "Informational Button",
     size: "medium",
-    variant: "discovery",
+    intent: "info",
   },
 };
 export const Neutral: Story = {
   args: {
     children: "Neutral Button",
     size: "medium",
-    variant: "neutral",
+    intent: "neutral",
   },
 };
 export const Disabled: Story = {
   args: {
     children: "Disabled Button",
     size: "medium",
-    variant: "neutral",
+    intent: "neutral",
     disabled: true,
   },
 };
@@ -87,7 +87,7 @@ export const Loading: Story = {
   args: {
     children: "Loading Button",
     size: "medium",
-    variant: "primary",
+    intent: "primary",
     isLoading: true,
   },
 };
@@ -95,20 +95,20 @@ export const Small: Story = {
   args: {
     children: "Small Button",
     size: "small",
-    variant: "primary",
+    intent: "primary",
   },
 };
 export const Medium: Story = {
   args: {
     children: "Medium Button",
     size: "medium",
-    variant: "primary",
+    intent: "primary",
   },
 };
 export const Large: Story = {
   args: {
     children: "Large Button",
     size: "large",
-    variant: "primary",
+    intent: "primary",
   },
 };

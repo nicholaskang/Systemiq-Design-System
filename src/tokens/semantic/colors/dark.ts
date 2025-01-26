@@ -19,8 +19,9 @@ export const darkColors = {
     strong: colors.gray[600],
     inverse: colors.gray[200],
   },
+  // Semantic meaning and intent for components and feedback
   status: {
-    // Main interactive elements like primary buttons
+    // Default interactive elements like primary buttons
     primary: {
       background: colors.blue[600],
       hover: colors.blue[500],
@@ -64,19 +65,8 @@ export const darkColors = {
       border: colors.green[500],
       icon: colors.green[400],
     },
-    // General information or updates
+    // Informational updates, new features or learning opportunities
     info: {
-      background: colors.blue[600],
-      hover: colors.blue[500],
-      active: colors.blue[400],
-      disabled: colors.gray[800],
-      text: colors.blue[200],
-      buttonText: colors.white,
-      border: colors.blue[500],
-      icon: colors.blue[400],
-    },
-    // New features or learning opportunities
-    discovery: {
       background: colors.purple[600],
       hover: colors.purple[500],
       active: colors.purple[400],

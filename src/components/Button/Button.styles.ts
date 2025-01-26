@@ -14,7 +14,7 @@ export const Button = styled.button<ButtonProps>`
   font-family: ${({ theme }) => theme.typography.inline.button.fontFamily};
   font-weight: ${({ theme }) => theme.typography.inline.button.fontWeight};
 
-  // Size variants
+  // Size styles
   ${({ theme, size = "medium" }) => {
     switch (size) {
       case "small":
@@ -38,9 +38,9 @@ export const Button = styled.button<ButtonProps>`
     }
   }}
 
-  // Status/Variant styles
-  ${({ theme, variant = "primary" }) => {
-    const status = theme.semanticColors.status[variant];
+  // Intent styles
+  ${({ theme, intent = "primary" }) => {
+    const status = theme.semanticColors.status[intent];
     return `
       background-color: ${status.background};
       color: ${status.buttonText};
@@ -65,10 +65,10 @@ export const Button = styled.button<ButtonProps>`
 
   // Disabled state
   &:disabled {
-    background-color: ${({ theme, variant = "primary" }) =>
-      theme.semanticColors.status[variant].background};
-    border-color: ${({ theme, variant = "primary" }) =>
-      theme.semanticColors.status[variant].border};
+    background-color: ${({ theme, intent = "primary" }) =>
+      theme.semanticColors.status[intent].background};
+    border-color: ${({ theme, intent = "primary" }) =>
+      theme.semanticColors.status[intent].border};
     cursor: not-allowed;
     color: ${({ theme }) => theme.semanticColors.disabled.text};
     opacity: 0.6;

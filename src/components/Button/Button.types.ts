@@ -1,14 +1,14 @@
 export type ButtonSize = "small" | "medium" | "large";
-export type ButtonVariant =
+export type ButtonIntent =
   | "primary"
   | "warning"
   | "danger"
-  | "discovery"
+  | "info"
   | "neutral";
 
 export interface ButtonProps {
   size?: ButtonSize;
-  variant?: ButtonVariant;
+  intent?: ButtonIntent;
   disabled?: boolean;
   isLoading?: boolean;
 }

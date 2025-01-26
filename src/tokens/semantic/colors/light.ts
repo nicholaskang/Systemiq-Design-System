@@ -19,9 +19,9 @@ export const lightColors = {
     strong: colors.gray[300],
     inverse: colors.gray[800],
   },
-  // Interactive and informational state colors for components and feedback
+  // Semantic meaning and intent for components and feedback
   status: {
-    // Main interactive elements like primary buttons
+    // Default interactive elements like primary buttons
     primary: {
       background: colors.blue[500],
       hover: colors.blue[800],
@@ -65,19 +65,8 @@ export const lightColors = {
       border: colors.green[700],
       icon: colors.green[600],
     },
-    // General information or updates
+    // Informational updates, new features or learning opportunities
     info: {
-      background: colors.blue[500],
-      hover: colors.blue[800],
-      active: colors.blue[900],
-      disabled: colors.blue[100],
-      text: colors.blue[800],
-      buttonText: colors.white,
-      border: colors.blue[700],
-      icon: colors.blue[600],
-    },
-    // New features or learning opportunities
-    discovery: {
       background: colors.purple[500],
       hover: colors.purple[800],
       active: colors.purple[900],
@@ -100,8 +89,7 @@ export const lightColors = {
     },
   },
   disabled: {
-    // background: colors.gray[100],
-    background: "initial",
+    background: colors.gray[100],
     hover: colors.gray[100],
     active: colors.gray[100],
     text: colors.gray[400],

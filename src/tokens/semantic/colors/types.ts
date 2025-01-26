@@ -47,7 +47,7 @@ export type SemanticColorTypes = {
       border: string;
       icon: string;
     };
-    discovery: {
+    info: {
       background: string;
       hover: string;
       active: string;
