@@ -15,6 +15,7 @@ export const Button = React.forwardRef<
       variant={variant}
       disabled={disabled}
       isLoading={isLoading}
+      aria-busy={isLoading ? "true" : "false"}
       ref={ref}>
       {isLoading && (
         <ClipLoader
