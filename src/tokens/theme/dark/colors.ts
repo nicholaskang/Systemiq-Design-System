@@ -1,0 +1,86 @@
+import { ThemeColors } from "../base/colors";
+import { color } from "../../core/color";
+
+export const darkColors: ThemeColors = {
+  surfaces: {
+    background: {
+      primary: color.gray[900],
+      secondary: color.gray[800],
+      tertiary: color.gray[700],
+      inverse: color.white,
+    },
+    text: {
+      primary: color.white,
+      secondary: color.gray[300],
+      tertiary: color.gray[400],
+      inverse: color.gray[900],
+    },
+    border: {
+      default: color.gray[700],
+      strong: color.gray[600],
+      inverse: color.gray[200],
+    },
+  },
+  intent: {
+    primary: {
+      background: color.blue[600],
+      hover: color.blue[500],
+      active: color.blue[400],
+      disabled: color.gray[800],
+      text: color.blue[200],
+      buttonText: color.white,
+      border: color.blue[500],
+      icon: color.blue[400],
+    },
+    danger: {
+      background: color.red[600],
+      hover: color.red[500],
+      active: color.red[400],
+      disabled: color.gray[800],
+      text: color.red[200],
+      buttonText: color.white,
+      border: color.red[500],
+      icon: color.red[400],
+    },
+    warning: {
+      background: color.yellow[600],
+      hover: color.yellow[500],
+      active: color.yellow[400],
+      disabled: color.gray[800],
+      text: color.yellow[200],
+      buttonText: color.black,
+      border: color.yellow[500],
+      icon: color.yellow[400],
+    },
+    success: {
+      background: color.green[600],
+      hover: color.green[500],
+      active: color.green[400],
+      disabled: color.gray[800],
+      text: color.green[200],
+      buttonText: color.white,
+      border: color.green[500],
+      icon: color.green[400],
+    },
+    info: {
+      background: color.purple[600],
+      hover: color.purple[500],
+      active: color.purple[400],
+      disabled: color.gray[800],
+      text: color.purple[200],
+      buttonText: color.white,
+      border: color.purple[500],
+      icon: color.purple[400],
+    },
+    neutral: {
+      background: color.gray[700],
+      hover: color.gray[600],
+      active: color.gray[500],
+      disabled: color.gray[800],
+      text: color.white,
+      buttonText: color.white,
+      border: color.gray[600],
+      icon: color.gray[400],
+    },
+  },
+} as const;

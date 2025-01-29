@@ -1,4 +1,6 @@
-export const zIndex = {
+export type ZIndexTokens = Record<string, number>;
+
+export const zIndex: ZIndexTokens = {
   hide: -1,
   base: 0,
   dropdown: 1000,

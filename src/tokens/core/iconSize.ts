@@ -1,4 +1,6 @@
-export const iconSizes = {
+export type IconSizeTokens = Record<string, string>;
+
+export const iconSizes: IconSizeTokens = {
   xs: "12px", // For inline text or dense UIs
   sm: "16px", // Default size, matches base font
   md: "20px", // Medium emphasis

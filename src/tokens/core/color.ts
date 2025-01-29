@@ -1,4 +1,18 @@
-export const colors = {
+export type ColorScale = Record<number, string>;
+
+export type ColorTokens = {
+  gray: ColorScale;
+  blue: ColorScale;
+  yellow: ColorScale;
+  red: ColorScale;
+  purple: ColorScale;
+  green: ColorScale;
+  white: string;
+  black: string;
+  transparent: string;
+};
+
+export const color: ColorTokens = {
   gray: {
     50: "#f7f7f7",
     100: "#e0e0e0",

@@ -1,9 +1,9 @@
-export { duration } from "./animations";
-export { breakpoints } from "./breakpoints";
-export { colors } from "./colors";
-export { iconSizes } from "./iconSizes";
+export { animationDuration } from "./animationDuration";
+export { breakpoint } from "./breakpoint";
+export { color } from "./color";
+export { iconSizes } from "./iconSize";
 export { radius } from "./radius";
-export { shadows } from "./shadows";
+export { shadow } from "./shadow";
 export { spacing } from "./spacing";
 export { typography } from "./typography";
 export { zIndex } from "./zIndex";

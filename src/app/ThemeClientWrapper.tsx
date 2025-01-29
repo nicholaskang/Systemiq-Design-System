@@ -1,6 +1,6 @@
 "use client";
 import { ThemeProvider } from "@emotion/react";
-import { lightTheme } from "@/theme/theme";
+import { lightTheme } from "@/tokens/theme";
 
 export function ThemeClientWrapper({
   children,

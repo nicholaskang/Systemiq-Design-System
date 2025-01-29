@@ -1,4 +1,6 @@
-export const spacing = {
+export type SpacingTokens = Record<number, string>;
+
+export const spacing: SpacingTokens = {
   0: "0",
   1: "0.25rem", // 4px
   2: "0.5rem", // 8px

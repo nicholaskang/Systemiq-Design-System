@@ -1,4 +1,6 @@
-export const duration = {
+export type AnimationDurationTokens = Record<number, string>;
+
+export const animationDuration: AnimationDurationTokens = {
   75: "75ms",
   100: "100ms",
   150: "150ms",

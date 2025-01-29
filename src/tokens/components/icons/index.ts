@@ -1,4 +1,4 @@
-import { iconSizes } from "../../core/iconSizes";
+import { iconSizes } from "../../core/iconSize";
 
 export const semanticIcons = {
   // For different text contexts

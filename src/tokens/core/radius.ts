@@ -1,4 +1,6 @@
-export const radius = {
+export type RadiusTokens = Record<string, string>;
+
+export const radius: RadiusTokens = {
   none: "0",
   sm: "0.125rem", // 2px
   base: "0.25rem", // 4px

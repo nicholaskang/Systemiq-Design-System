@@ -1,5 +1,10 @@
 import styled from "@emotion/styled";
+import { spacing } from "../../tokens/core/spacing";
+import { radius } from "../../tokens/core/radius";
+import { semanticTypography as typography } from "../../tokens/semantic/typography";
 import { ButtonProps } from "./Button.types";
+
+// TODO: Update tokens to use semantic tokens, apply proper colors/overall styles
 
 export const Button = styled.button<ButtonProps>`
   // Base styles
@@ -9,10 +14,10 @@ export const Button = styled.button<ButtonProps>`
   border: 1px solid transparent;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  gap: ${({ theme }) => theme.spacing[2]};
-  border-radius: ${({ theme }) => theme.radius.md};
-  font-family: ${({ theme }) => theme.typography.inline.button.fontFamily};
-  font-weight: ${({ theme }) => theme.typography.inline.button.fontWeight};
+  gap: ${spacing[2]};
+  border-radius: ${radius.md};
+  font-family: ${typography.inline.button.fontFamily};
+  font-weight: ${typography.inline.button.fontWeight};
 
   // Size styles
   ${({ theme, size = "medium" }) => {
@@ -40,20 +45,20 @@ export const Button = styled.button<ButtonProps>`
 
   // Intent styles
   ${({ theme, intent = "primary" }) => {
-    const status = theme.semanticColors.status[intent];
+    const intent = theme.semanticColors.intent[intent];
     return `
-      background-color: ${status.background};
-      color: ${status.buttonText};
-      border-color: ${status.border};
+      background-color: ${intent.background};
+      color: ${intent.buttonText};
+      border-color: ${intent.border};
 
       &:hover:not(:disabled) {
-        background-color: ${status.hover};
-        border-color: ${status.hover};
+        background-color: ${intent.hover};
+        border-color: ${intent.hover};
       }
 
       &:active:not(:disabled) {
-        background-color: ${status.active};
-        border-color: ${status.active};
+        background-color: ${intent.active};
+        border-color: ${intent.active};
       }
 
       &:focus-visible {
@@ -63,12 +68,17 @@ export const Button = styled.button<ButtonProps>`
     `;
   }}
 
+  // Pressed state
+  &:active {
+    transform: scale(0.95);
+  }
+
   // Disabled state
   &:disabled {
     background-color: ${({ theme, intent = "primary" }) =>
-      theme.semanticColors.status[intent].background};
+      theme.semanticColors.intent[intent].background};
     border-color: ${({ theme, intent = "primary" }) =>
-      theme.semanticColors.status[intent].border};
+      theme.semanticColors.intent[intent].border};
     cursor: not-allowed;
     color: ${({ theme }) => theme.semanticColors.disabled.text};
     opacity: 0.6;
